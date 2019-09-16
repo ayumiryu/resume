@@ -1,0 +1,47 @@
+
+
+#resume{
+	width: 100%;
+	max-width: 768px;
+	margin:0 auto;
+	height: auto;
+}
+#gallery{
+	height: 431px;
+	width: 100%;
+	margin:auto;
+	margin-top: 10px;
+	/*border-bottom: 1px solid #4c301a;*/
+}
+#athena{
+	height: 430px;
+	width: 300px;
+	background-color: #fff;
+	background-image: url(../images/2018.jpg);
+	background-position: center;
+	float: left;
+}
+#athena_me{
+	/*height: 430px;*/
+	max-width: 400px;
+	width: 44%;
+	float: left;
+	color: #fff;
+	line-height: 30px;
+	font-size: 16px;
+	margin-top: 50px;
+}
+#me_h1 h1{
+	width: 100px;
+	float: left;
+	margin-bottom: 0px;
+}
+#me_h1 p{
+	height: 40px;
+	margin-top: 32px;
+    margin-bottom: 0px;
+}
+#athena_me p{
+	float: left;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
