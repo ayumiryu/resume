@@ -1,5 +1,10 @@
 
-
+/*#bodymain{
+	width: 100%;
+	max-width: 768px;
+	margin:0 auto;
+	height: auto;
+}*/
 #resume{
 	width: 100%;
 	max-width: 768px;
@@ -7,29 +12,28 @@
 	height: auto;
 }
 #gallery{
-	height: 431px;
-	width: 100%;
+	width: 90%;
 	margin:auto;
 	margin-top: 10px;
+	margin-bottom: 36px;
 	/*border-bottom: 1px solid #4c301a;*/
 }
 #athena{
-	height: 430px;
-	width: 300px;
+	height: 128px;
+	width: 128px;
 	background-color: #fff;
-	background-image: url(../images/2018.jpg);
-	background-position: center;
-	float: left;
+	background-image: url(../images/2019.png);
+	margin: 0 auto;
 }
 #athena_me{
-	/*height: 430px;*/
-	max-width: 400px;
-	width: 44%;
-	float: left;
+	max-width: 768px;
+	width: 80%;
 	color: #fff;
 	line-height: 30px;
-	font-size: 16px;
-	margin-top: 50px;
+	font-size: 14px;
+	/*//margin-top: 50px;*/
+	margin: 0 auto;
+	text-align: center;
 }
 #me_h1 h1{
 	width: 100px;
@@ -41,7 +45,66 @@
 	margin-top: 32px;
     margin-bottom: 0px;
 }
-#athena_me p{
-	float: left;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#workp{
+	width: 100%;
+	max-width: 768px;
+	margin:0 auto;
+	height: auto;
+}
+#work{
+	width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: -16px;
+    /*float: left;*/
+    /*margin-left: 5%;*/
+}
+#re_title{
+	max-width: 768px;
+	width: 100%;
+	color: #ddd;
+	line-height: 30px;
+	font-size: 16px;
+	font-style: bold;
+	margin: 0 auto;
+	text-align: right;
+}
+#re_title p{
+	width: 120px;
+	background: #306ecb;
+	text-align: center;
+}
+#com{
+	max-width: 768px;
+	width: 100%;
+	color: #fff;
+	/*line-height: 30px;*/
+	font-size: 16px;
+	margin: 0 auto;
+	text-align: left;
+	height: auto;
+}
+#com_n{
+	width: 100%;
+	overflow: hidden;
+}
+#com_l{
+	text-align: left;
+    width: 50%;
+    float: left;
+}
+#com_r{
+	text-align: right;
+    width: 50%;
+    float: left;
+}
+#com_c{
+	text-align: left;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color:#aaa;
+    line-height: 22px;
+    margin-bottom: 20px;
 }

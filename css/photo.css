@@ -1,26 +1,35 @@
 @charset "utf-8";
 
+#gal_box{
 
+    margin: 0 auto;
+    width: 100%;
+    max-width: 768px;
+
+}
 #gallery{
-	height: 180px;
+	height: auto;
+	float: left;
 	width: 100%;
 	max-width: 768px;
 	margin:auto;
 	margin-top: 10px;
-	border: 1px solid #666;
+	border: 1px solid #555;
 	background-color: #292929;
 }
 #gallery ul{
-	float: left;
+	/*float: left;*/
 	margin-top: 20px;
 	padding-left: 0px;
+	height: 140px;
 }
 #gallery_year{
 	float: left;
-	width:130px;
+	width:96px;
 	text-align: center;
 	padding-top: 60px;
 	color: #fff;
+	font-size: 14px;
 }
 #a_img {
 	float: right;
