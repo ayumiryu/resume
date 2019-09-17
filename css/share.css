@@ -31,6 +31,7 @@ opacity: 0.8;
 	width: 100%;
 	margin:0 auto;
 	font-size: 16px;
+	max-width: 768px;
 }
 /*#title_secfir {
 	width: 150px;
@@ -44,17 +45,17 @@ opacity: 0.8;
 
 }
 #floor_menu {
-	width: 100%;
+	width: 90%;
 	max-width: 768px;
 	margin:0 auto;
 	height: 100%;
-	padding-inline-start:5%;
+	padding-inline-start:0%;
 }
 #floor_menu li{
 	list-style: none;
 	float: left;
 	margin-top:8px;
-	width:30%;
+	width:33%;
 }
 #ziti a:hover {
 	text-decoration: underline;
@@ -70,4 +71,6 @@ opacity: 0.8;
 	border-bottom: 0.5px solid #fff;
 	width: 90%;
 	margin: 0 auto;
+	padding-bottom: 18px;
 }
+/*<!-- YI LIU: my personal work of my resume, don't copy or use it for any business-->*/

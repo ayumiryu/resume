@@ -1,4 +1,4 @@
-
+/*<!-- YI LIU: my personal work of my resume, don't copy or use it for any business-->*/
 /*#bodymain{
 	width: 100%;
 	max-width: 768px;
@@ -15,7 +15,7 @@
 	width: 90%;
 	margin:auto;
 	margin-top: 10px;
-	margin-bottom: 36px;
+	margin-bottom: 20px;
 	/*border-bottom: 1px solid #4c301a;*/
 }
 #athena{
@@ -27,7 +27,7 @@
 }
 #athena_me{
 	max-width: 768px;
-	width: 80%;
+	width: 90%;
 	color: #fff;
 	line-height: 30px;
 	font-size: 14px;
@@ -72,7 +72,7 @@
 }
 #re_title p{
 	width: 120px;
-	background: #306ecb;
+	background: #0070c0;
 	text-align: center;
 }
 #com{
@@ -88,6 +88,7 @@
 #com_n{
 	width: 100%;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 #com_l{
 	text-align: left;
@@ -106,5 +107,21 @@
     font-size: 14px;
     color:#aaa;
     line-height: 22px;
-    margin-bottom: 20px;
+
+}
+#com_e{
+	text-align: left;
+    width: 70%;
+    float: left;
+        font-size: 14px;
+    color:#aaa;
+    line-height: 22px;
+}
+#com_m{
+	text-align: right;
+    width: 30%;
+    float: left;
+        font-size: 14px;
+    color:#aaa;
+    line-height: 22px;
 }

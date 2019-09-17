@@ -13,8 +13,8 @@
 #outerImageContainer{
 	position: relative;
 	background-color: #fff;
-	width: 250px;
-	height: 250px;
+	width: 100%;
+	height: auto;
 	margin: 0 auto;
 	}
 

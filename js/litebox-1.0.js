@@ -323,9 +323,15 @@ Lightbox.prototype = {
 		
 		// Resize the outerImageContainer very sexy like
 		reHeight = new fx.Height('outerImageContainer', { duration: resizeDuration });
-		reHeight.custom(Element.getHeight('outerImageContainer'),imgHeight+(borderSize*2)); 
 		reWidth = new fx.Width('outerImageContainer', { duration: resizeDuration, onComplete: function() { imageEffect.custom(0,1); }});
-		reWidth.custom(Element.getWidth('outerImageContainer'),imgWidth+(borderSize*2));
+		if(imgWidth < document.body.clientWidth){
+			reWidth.custom(Element.getWidth('outerImageContainer'),imgWidth+(borderSize*2));
+			reHeight.custom(Element.getHeight('outerImageContainer'),imgHeight+(borderSize*2)); 
+		}
+		else{
+			reWidth.custom(Element.getWidth('outerImageContainer'),document.body.clientWidth);
+			reHeight.custom(Element.getHeight('outerImageContainer'),imgHeight*(document.body.clientWidth - (borderSize*2))/imgWidth); 
+		}
 
 		// if new and old image are same size and no scaling transition is necessary, 
 		// do a quick pause to prevent image flicker.
@@ -333,10 +339,23 @@ Lightbox.prototype = {
 			if (navigator.appVersion.indexOf("MSIE")!=-1){ pause(250); } else { pause(100);} 
 		}
 
-		Element.setHeight('prevLink', imgHeight);
-		Element.setHeight('nextLink', imgHeight);
-		Element.setWidth( 'imageDataContainer', imgWidth + (borderSize * 2));
-		Element.setWidth( 'hoverNav', imgWidth + (borderSize * 2));
+		if(imgWidth < document.body.clientWidth){
+			Element.setHeight('prevLink', imgHeight);
+			Element.setHeight('nextLink', imgHeight);
+			Element.setWidth( 'imageDataContainer', imgWidth + (borderSize * 2));
+			Element.setWidth( 'hoverNav', imgWidth + (borderSize * 2));
+			Element.setWidth( 'lightboxImage', imgWidth);
+			Element.setHeight( 'lightboxImage', imgHeight);
+
+		}else{
+			Element.setHeight('prevLink', imgHeight);
+			Element.setHeight('nextLink', imgHeight);
+			Element.setWidth( 'imageDataContainer', document.body.clientWidth);
+			Element.setWidth( 'hoverNav', document.body.clientWidth);	
+			Element.setWidth( 'lightboxImage', document.body.clientWidth - (borderSize * 2));
+			Element.setHeight( 'lightboxImage', imgHeight*(document.body.clientWidth - (borderSize * 2))/imgWidth - (borderSize * 2));
+		}
+
 		
 		this.showImage();
 	},
