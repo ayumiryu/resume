@@ -15,31 +15,49 @@ body{
 
 #projd{
 	width: 90%;
-	max-width: 768px;
+	max-width: 560px;
+	/*min-width: 560px;*/
 	margin:0 auto;
 	height: auto;
 	overflow: hidden;
 }
+#ptitle{
+	width: 100%;
+	margin:0 auto;
+	color: #aaa;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 26px;
+	padding-bottom: 26px;
+}
 #box{
-	width: 46%;
+	width: 100%;
 	/*max-width: 450px;*/
 	height: auto;
-	color: #aaa;
+	color: #666;
 	font-size: 12px;
-/*	border:0.5px solid #666;*/
-	float: left;
+	overflow: hidden;
 	background: white;
-	margin: 2%;
+	margin-bottom: 14px;
+	cursor: pointer;
+}
+#box div:hover{
+			text-decoration: underline;
+}
+#bimg{
+	width:50%;
+	float: left;
+	font-size: 0;
+}
+#bimg img{
+	width: 100%;
+	display: block;
 }
 #text{
-	width:100%;
+	width:50%;
+	float: left;
 	/*padding:10px;*/
 }
-#btitle{
-	color:black;
-	font-size: 14px;
-	margin:14px;
-}
 #bdes{
-	margin:14px;
+	margin:10px;
 }
