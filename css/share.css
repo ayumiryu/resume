@@ -2,6 +2,7 @@
 body{
 	background-color: black;
 	font-family: Times New Roman;
+	margin:0;
 /*	width: 768px;
 	text-align: center;*/
 }
@@ -14,7 +15,7 @@ opacity: 0.8;
 }
 
 #title_sec {
-	height: 40px;
+	height: 44px;
 	width: 100%;
 	color: #FFF;
 	margin: auto;
@@ -54,7 +55,7 @@ opacity: 0.8;
 #floor_menu li{
 	list-style: none;
 	float: left;
-	margin-top:8px;
+	margin-top:14px;
 	width:33%;
 }
 #ziti a:hover {

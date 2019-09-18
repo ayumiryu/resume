@@ -145,6 +145,7 @@ Lightbox.prototype = {
 		var objLightbox = document.createElement("div");
 		objLightbox.setAttribute('id','lightbox');
 		objLightbox.style.display = 'none';
+		objLightbox.onclick = function() { myLightbox.end(); return false; }
 		objBody.appendChild(objLightbox);
 	
 		var objOuterImageContainer = document.createElement("div");
@@ -203,6 +204,10 @@ Lightbox.prototype = {
 		var objCaption = document.createElement("span");
 		objCaption.setAttribute('id','caption');
 		objImageDetails.appendChild(objCaption);
+
+		var objOrigin = document.createElement("a");
+		objOrigin.setAttribute('id','origin');
+		objImageDetails.appendChild(objOrigin);
 	
 		var objNumberDisplay = document.createElement("span");
 		objNumberDisplay.setAttribute('id','numberDisplay');
@@ -330,9 +335,10 @@ Lightbox.prototype = {
 		}
 		else{
 			reWidth.custom(Element.getWidth('outerImageContainer'),document.body.clientWidth);
-			reHeight.custom(Element.getHeight('outerImageContainer'),imgHeight*(document.body.clientWidth - (borderSize*2))/imgWidth); 
+			reHeight.custom(Element.getHeight('outerImageContainer'),imgHeight*(document.body.clientWidth - (borderSize*2))/imgWidth + (borderSize*2)); 
 		}
-
+		document.getElementById("outerImageContainer").setAttribute("onClick", "event.cancelBubble = true");
+		document.getElementById("imageDataContainer").setAttribute("onClick", "event.cancelBubble = true");
 		// if new and old image are same size and no scaling transition is necessary, 
 		// do a quick pause to prevent image flicker.
 		if((hDiff == 0) && (wDiff == 0)){
@@ -346,14 +352,16 @@ Lightbox.prototype = {
 			Element.setWidth( 'hoverNav', imgWidth + (borderSize * 2));
 			Element.setWidth( 'lightboxImage', imgWidth);
 			Element.setHeight( 'lightboxImage', imgHeight);
-
+			//Element.setWidth( 'lightbox', imgWidth + (borderSize * 2));
+			//document.getElementById("lightbox").style.left = document.body.clientWidth/2 + 'px';
+			//document.getElementById("lightbox").style.marginLeft = -(imgWidth + (borderSize * 2))/2 + 'px';
 		}else{
 			Element.setHeight('prevLink', imgHeight);
 			Element.setHeight('nextLink', imgHeight);
 			Element.setWidth( 'imageDataContainer', document.body.clientWidth);
 			Element.setWidth( 'hoverNav', document.body.clientWidth);	
 			Element.setWidth( 'lightboxImage', document.body.clientWidth - (borderSize * 2));
-			Element.setHeight( 'lightboxImage', imgHeight*(document.body.clientWidth - (borderSize * 2))/imgWidth - (borderSize * 2));
+			Element.setHeight( 'lightboxImage', imgHeight*(document.body.clientWidth - (borderSize * 2))/imgWidth);
 		}
 
 		
@@ -379,6 +387,10 @@ Lightbox.prototype = {
 		Element.show('caption');
 		Element.setInnerHTML( 'caption', imageArray[activeImage][1]);
 		
+		Element.show('origin');
+		Element.setInnerHTML( 'origin', "(-check original pic-)");
+		document.getElementById("origin").setAttribute("href",imageArray[activeImage][0]);
+
 		// if image is part of set display 'Image x of x' 
 		if(imageArray.length > 1){
 			Element.show('numberDisplay');
