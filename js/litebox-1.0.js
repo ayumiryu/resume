@@ -1,8 +1,5 @@
 // -----------------------------------------------------------------------------------
-//
-//	Litebox v1.0
-//	A combined effort between detrate and gannon
-//	07/03/06
+//	This is not used for any business objective.
 //
 //	Source edited from Lightbox v2.02
 //	by Lokesh Dhakar - http://www.huddletogether.com
