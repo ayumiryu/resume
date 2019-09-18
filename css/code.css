@@ -34,12 +34,13 @@ body{
 	width: 100%;
 	/*max-width: 450px;*/
 	height: auto;
-	color: #666;
+	color: #333;
 	font-size: 12px;
 	overflow: hidden;
 	background: white;
 	margin-bottom: 14px;
 	cursor: pointer;
+	display: flex;
 }
 #box div:hover{
 			text-decoration: underline;
@@ -56,8 +57,11 @@ body{
 #text{
 	width:50%;
 	float: left;
+	height: 100%;
+	margin: auto;
 	/*padding:10px;*/
 }
-#bdes{
-	margin:10px;
+#bdes1, #bdes2, #bdes3{
+	margin-left: 12px;
+	margin-right: 12px;
 }
