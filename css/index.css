@@ -1,46 +1,42 @@
 /*<!-- YI LIU: my personal work of my resume, don't copy or use it for any business-->*/
-/*#bodymain{
-	width: 100%;
-	max-width: 768px;
-	margin:0 auto;
-	height: auto;
-}*/
+
 #resume{
 	width: 100%;
-	max-width: 768px;
+	/*max-width: 768px;*/
 	margin:0 auto;
 	height: auto;
+	background-image: url(../images/bk_11.jpg);
+		display: flex;
+		height: 500px;
 }
 #gallery{
-	width: 90%;
+	width: 100%;
+	max-width: 691px;
 	margin:auto;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	/*border-bottom: 1px solid #4c301a;*/
 }
-#athena{
+/*#athena{
 	height: 128px;
 	width: 128px;
 	background-color: #fff;
 	background-image: url(../images/2019.png);
 	margin: 0 auto;
-}
+}*/
 #athena_me{
 	max-width: 368px;
 	width: 90%;
 	color: #fff;
-	line-height: 30px;
+	line-height: 24px;
 	font-size: 14px;
 	/*//margin-top: 50px;*/
 	margin: 0 auto;
 	text-align: center;
+	text-shadow:1px 1px 1px #000;
 }
-#me_h1 h1{
+#me_h1{
 	width: 100px;
-	float: left;
 	margin-bottom: 0px;
 }
-#me_h1 p{
+#me_h1 h1{
 	height: 40px;
 	margin-top: 32px;
     margin-bottom: 0px;
@@ -56,24 +52,20 @@
     max-width: 768px;
     margin: 0 auto;
     height: auto;
-    margin-top: -16px;
-    /*float: left;*/
-    /*margin-left: 5%;*/
 }
 #re_title{
-	max-width: 768px;
 	width: 100%;
-	color: #ddd;
-	line-height: 30px;
-	font-size: 16px;
-	font-style: bold;
-	margin: 0 auto;
-	text-align: right;
+	margin:0 auto;
+	color: #aaa;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 46px;
+	padding-bottom: 36px;
 }
 #re_title p{
-	width: 120px;
+/*	width: 120px;
 	background: #0070c0;
-	text-align: center;
+	text-align: center;*/
 }
 #com{
 	max-width: 768px;
@@ -88,7 +80,7 @@
 #com_n{
 	width: 100%;
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 }
 #com_l{
 	text-align: left;
@@ -106,7 +98,7 @@
     float: left;
     font-size: 14px;
     color:#aaa;
-    line-height: 22px;
+    line-height: 24px;
 
 }
 #com_e{
@@ -124,4 +116,31 @@
         font-size: 14px;
     color:#aaa;
     line-height: 22px;
+}
+#resumeexp{
+	width: 100%;
+	/*max-width: 768px;*/
+	margin:0 auto;
+	height: auto;
+	background-image: url(../images/bk_2.jpg);
+	display: flex;
+	height: 300px;
+	margin-top: 46px;
+}
+#galleryexp{
+	width: 100%;
+	max-width: 691px;
+	margin:auto;
+}
+
+#athena_exp{
+	width: 49%;
+	color: #fff;
+	line-height: 24px;
+	font-size: 14px;
+	/*//margin-top: 50px;*/
+	margin: 0 auto;
+	text-align: center;
+	text-shadow:1px 1px 1px #000;
+	float: left;
 }
