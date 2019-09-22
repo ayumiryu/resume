@@ -7,6 +7,15 @@
     max-width: 768px;
 
 }
+#re_title{
+	width: 100%;
+	margin:0 auto;
+	color: #aaa;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 46px;
+	padding-bottom: 36px;
+}
 #gallery{
 	height: auto;
 	float: left;
